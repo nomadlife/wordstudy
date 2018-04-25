@@ -5,9 +5,9 @@
 	<title>Word list</title>
 </head>
 <body>
+	this is list page
 	<ul>
-		this is list page
-		<li>Word | Meaning | Date </li>
+		Word | Meaning | Date
 		{% for item in wordList %}
 		<li><a href="/view/{{item.id}}">{{ item.word }}</a> | {{ item.meaning}} | {{ item.cdate|date:"D d M Y"}}</li>
 		{% endfor%}
